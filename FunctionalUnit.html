@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid - Functional Units</title>
+
+	<style>
+		body {
+			margin-top: 40px;
+			text-align: center;
+		}
+
+		#container {
+			width: 800px;
+			margin: auto;
+			background: #a3a3a3;
+
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 150px);
+			grid-gap: 1em;
+		}
+
+		#container > div {
+			background: #f3aa34;
+			font-weight: bold;
+			color: #222;
+			font-family: sans-serif;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<section id="container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	</section>
+
+</body>
+</html>

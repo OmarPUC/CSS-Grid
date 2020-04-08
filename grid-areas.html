@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid - Grid Areas</title>
+
+	<style>
+		body {
+			margin-top: 40px;
+			text-align: center;
+		}
+
+		#container {
+			display: grid;
+			grid-template-columns: 150px 250px auto;
+			grid-template-rows: 100px auto 100px;
+			grid-template-areas: 
+				"header header header"
+				"nav aside main"
+				"footer footer footer";
+			grid-gap: 10px;
+		}
+
+		header {
+			grid-area: header;
+			background: #0099BC;
+		}
+
+		nav {
+			grid-area: nav;
+			background: #f67d67;
+		}
+
+		aside {
+			grid-area: aside;
+			background: #25AFF3;
+		}
+
+		main {
+			grid-area: main;
+			background: #82B27C;
+		}
+
+		footer {
+			grid-area: footer;
+			background: #F9AE51;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<section id="container">
+		<header>Header Area</header>
+		<nav>Navigation Area</nav>
+		<aside>Aside Area</aside>
+		<main>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</main>
+		<footer>Footer Area</footer>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid - Position Anywhere</title>
+
+	<style>
+		.container {
+			width: 500px;
+			height: 450px;
+			margin: 100px auto 0;
+			/*background: #42d6b9;*/
+
+			display: grid;
+			grid-template-columns: repeat(4, auto);
+			grid-gap: 16px;
+		}
+
+		.item {
+			border: 3px solid grey;
+		}
+
+		.item:nth-child(1) {
+			background: red;
+			
+			grid-row: 2 / 3;
+
+			grid-column: 1 / 4;
+		}
+
+		.item:nth-child(8) {
+			background: green;
+			
+			grid-row: 3 / 4;
+
+			grid-column: 2 / 5;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>	
+			<div class="item">4</div>
+			<div class="item">5</div>
+			<div class="item">6</div>
+			<div class="item">7</div>
+			<div class="item">8</div>
+	</div>
+
+</body>
+</html>
